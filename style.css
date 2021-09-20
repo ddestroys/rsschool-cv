@@ -87,29 +87,34 @@ body{
     font-weight: lighter;
 }
 
-.main-wrapper .contacts .links {
+.links {
     text-decoration: none;
     color:#000000;
 }
-.about-skills-code,
+.gallery-link .img{
+    width: 181px;
+    height: 180px;
+    background-repeat: no-repeat;
+}
+.about-skills-works,
 .edu-video{
     display: none;
 }
-.main-wrapper .about-skills-code .description {
+.main-wrapper .about-skills-works .description {
     display: flex;
     flex-direction: column;
 }
 
-.main-wrapper .about-skills-code .description :last-child {
+.main-wrapper .about-skills-works .description :last-child {
     margin-top: 10px;
 }
 
-.main-wrapper .skills-code .description{
+.main-wrapper .skills-works .description{
     display: flex;
     flex-direction:column;
 }
 
-.main-wrapper .skills-code .description :last-child {
+.main-wrapper .skills-works .description :last-child {
     margin-top: 10px;
 }
 
@@ -201,10 +206,30 @@ body{
     height: 100px;
     border-top: 1px black solid;
     margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+}
+
+.rs-school .logo {
+    background-image: url("rs_school_js.svg");
+    width: 120px;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+
+.footer .git {
+    background-image: url("github-seeklogo.com.svg");
+    width: 61px;
+    height: 59px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media screen and (max-width: 905px){
-    .about-skills-code{
+    .about-skills-works{
         display: flex;
         flex-direction:column;
     }
@@ -214,7 +239,7 @@ body{
     }
 
     .about-edu,
-    .skills-code{
+    .skills-works{
         display: none;
     }
 }
@@ -226,13 +251,13 @@ body{
         align-items: center;
     }
 
-    .about-skills-code,
+    .about-skills-works,
     .edu-video{
         display: none;
     }
 
     .about-edu,
-    .skills-code{
+    .skills-works{
         display: flex;
         flex-direction:column;
     }
